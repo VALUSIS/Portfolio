@@ -17,7 +17,7 @@ $color-paleta-8:  #3a4546;
 
 body {
   width: 100%;
-  background: linear-gradient(to bottom, #a8a8a8, #000000);
+  background: linear-gradient(to bottom, $color-paleta-1, $color-paleta-2);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;

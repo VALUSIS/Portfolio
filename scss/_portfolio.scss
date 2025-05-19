@@ -1,79 +1,66 @@
+$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
 .main__cars {
   width: 100%;
   align-items: center;
-}
 
-.div__cars--img {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  margin-top: 20px;
-  height: auto;
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
+  .div__cars--img {
+    width: 85%;
+    margin: 20px auto 0 auto;
+    padding: 5px;
+    height: auto;
+    display: block;
+    box-shadow: $box-shadow;
+  }
 
-@media (min-width: 1024px) {
-      .main__cars {
-      width: 100%;
-      align-items: center;
-    }
-    
+  @media (min-width: 1024px) {
+    width: 100%;
+    align-items: center;
+
     .div__cars--img {
       width: 400px;
-      margin: 10px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 10px auto;
       padding: 5px;
-      margin-top: 20px;
       height: auto;
       display: block;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      box-shadow: $box-shadow;
     }
 
-      .main__div--imgsup {
+    .main__div--imgsup {
       position: relative;
       width: 100%;
       height: auto;
-  }
-  
-  .div__card--1 {
-    margin: 10px;
-  }
-
-  .div__card--2 {
-    margin: 10px;
-  }
-
-  .div__card--3 {
-    width: 100%;  
-    height: auto; 
-    object-fit: cover;
-  }
-
-  .div__card--4 {
-    margin: 15px;
-  }
-
-    .div2__con--1 {
-      display: flex;
-      width: 100%;
     }
 
-    .div2__con--2 {
-      display: flex;
-      width: 100%;
+    .div__card--1 {
+      margin: 10px;
     }
 
+    .div__card--2 {
+      margin: 10px;
+    }
+
+    .div__card--3 {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .div__card--4 {
+      margin: 15px;
+    }
+
+    .div2__con--1,
+    .div2__con--2,
     .div2__con--3 {
-       display: flex;
-       width: 100%;
+      display: flex;
+      width: 100%;
     }
-  
+
     .div__textcon {
       text-align: center;
       margin-top: 20px;
       color: #000000;
     }
+  }
 }
