@@ -1,0 +1,41 @@
+.div__igcon {
+display: flex;
+justify-content: left;
+align-items: baseline;    
+gap: 2px; 
+}
+.main__iglogo {
+width: 45px;         
+height: auto;     
+}
+
+.div__iglink {
+background: linear-gradient(90deg, #b700ff, #ff00b3, #dbf84d);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+      .div__igcon {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 8px;               
+    padding: 1rem
+  }
+  
+  .main__iglogo {
+    width: 45px;
+    height: auto;
+    display: block;
+  }
+
+  .div__iglink {
+    display: flex;
+    align-items: center;  
+    margin-top: 15%;
+  }
+}
