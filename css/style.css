@@ -8,9 +8,12 @@
 
 .div__igcon {
   display: flex;
-  justify-content: left;
-  align-items: baseline;
-  gap: 2px;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
 
 .main__iglogo {
@@ -32,8 +35,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    padding: 1rem;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .div__igcon :hover {
+    background-color: #797069;
+    border-radius: 5px;
   }
   .main__iglogo {
     width: 45px;
@@ -43,29 +50,14 @@
   .div__iglink {
     display: flex;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 0px;
   }
 }
 .main__conte {
   flex: 1;
 }
-@media (min-width: 1024px) {
-  .main__conte {
-    position: relative;
-    width: 100%;
-    height: 300px;
-  }
-}
 .main__conte .main__banner {
   display: none;
-}
-@media (min-width: 1024px) {
-  .main__conte .main__banner {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 }
 .main__conte .main__div--imgsup {
   position: relative;
@@ -77,11 +69,6 @@
   height: 100%;
   object-fit: cover;
 }
-@media (min-width: 1024px) {
-  .main__conte .main__div--imgsup .main__imgprincipal {
-    display: none;
-  }
-}
 .main__conte .main__div--imgsup .main__mypic {
   position: absolute;
   top: 60px;
@@ -92,39 +79,65 @@
   border-color: #fff;
   opacity: 0.9;
 }
-@media (min-width: 1024px) {
-  .main__conte .main__div--imgsup .main__mypic {
-    top: -100px;
-    left: 90%;
-    transform: translate(-50%, -50%);
-  }
-}
 .main__conte .main__textpc,
 .main__conte .div__mypicpc {
   display: none;
 }
 .main__conte .main__card {
   width: 100%;
-  margin: 0;
+  margin-top: 10px;
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
 }
-@media (min-width: 1024px) {
-  .main__conte .main__card {
-    display: none;
-  }
-}
 .main__conte .main__card--2 {
   display: none;
 }
+
+.div__button {
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .main__conte .main__mypic {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
+  .main__conte {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .main__conte .main__banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .main__conte .main__div--imgsup .main__imgprincipal {
+    display: none;
+  }
+  .main__conte .main__div--imgsup .main__mypic {
+    top: -100px;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+  .main__conte .main__card {
+    display: none;
+  }
   .main__conte .main__card--2 {
     display: flex;
     align-items: center;
   }
+  .main__conte .main__card--2 h5 {
+    margin-top: 10px;
+  }
+  .main__conte .main__card--2 a {
+    margin-bottom: 20px;
+    width: 100px;
+  }
 }
-
 .main__cars {
   width: 100%;
   align-items: center;
@@ -290,21 +303,6 @@ body {
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
-  .main__mypic {
-    position: absolute;
-    top: 115px;
-    left: 60px;
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    border-color: white;
-    opacity: 90%;
-  }
-  .div__button {
-    width: 50%;
-  }
-}
 @media (min-width: 1024px) {
   body {
     width: 100%;

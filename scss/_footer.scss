@@ -1,8 +1,20 @@
+$color-paleta-1:  #e6dfdc;
+$color-paleta-2:  #1a2122;
+$color-paleta-3:  #797069;
+$color-paleta-4:  #0d6cfa;
+$color-paleta-5:  #95a3a2;
+$color-paleta-6:  #4c4845;
+$color-paleta-7:  #54676e;
+$color-paleta-8:  #3a4546;
+
 .div__igcon {
-display: flex;
-justify-content: left;
-align-items: baseline;    
-gap: 2px; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px; 
+  padding: 0px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
 .main__iglogo {
 width: 45px;         
@@ -19,12 +31,17 @@ text-transform: uppercase;
 }
 
 @media (min-width: 1024px) {
-      .div__igcon {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    gap: 8px;               
-    padding: 1rem
+  .div__igcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  }
+
+  .div__igcon :hover {
+    background-color: $color-paleta-3;
+    border-radius: 5px;
   }
   
   .main__iglogo {
@@ -36,6 +53,6 @@ text-transform: uppercase;
   .div__iglink {
     display: flex;
     align-items: center;  
-    margin-top: 15%;
+    margin-top: 0px;
   }
 }

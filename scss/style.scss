@@ -31,25 +31,6 @@ body {
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
-  .main__mypic {
-    position: absolute;
-    top: 115px; 
-    left: 60px;
-    width: 250px; 
-    height: auto;
-    border-radius: 10px;
-    border-color: white;
-    opacity: 90%;
-    
-}
-
-.div__button {
-  width: 50%;
-}
-
-}
-
 @media (min-width: 1024px) {
   body {
       width: 100%;
